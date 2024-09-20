@@ -19,8 +19,3 @@ readInputFile(filePath): Reads an input file, processes the content to extract u
 writeOutputFile(filePath, uniqueIntegers): Writes the sorted list of unique integers to the specified output file.
 processInputFile(inputFilePath): Manages the process of reading from an input file and writing to the corresponding output file.
 fs.readdirSync(inputFolder): Iterates over all files in the input folder and processes them.
-Usage
-Prepare Directories: Ensure the following directories are in place:
-
-/dsa/hw01/sample_inputs/: Place your input files here.
-/dsa/hw01/sample_results/: This is where output files will be saved.
