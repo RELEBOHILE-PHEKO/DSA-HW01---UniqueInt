@@ -37,13 +37,13 @@ function processInputFile(inputFilePath) {
    * Processes an input file and generates an output file.
    */
   const fileName = path.basename(inputFilePath, '.txt'); // Get file name without extension
-  const outputFilePath = `/dsa/hw01/sample_results/${fileName}_results.txt`;
+  const outputFilePath = path.join(__dirname, `small_sample_input_03.txt_result`); // Adjusted path
   const uniqueIntegers = readInputFile(inputFilePath);
   writeOutputFile(outputFilePath, uniqueIntegers);
 }
 
-// Process all input files in the sample_inputs folder
-const inputFolder = '/dsa/hw01/sample_inputs/';
+// Define the correct input folder path based on your directory
+const inputFolder = path.join(__dirname, 'sample_inputs');
 fs.readdirSync(inputFolder).forEach((file) => {
   if (file.endsWith('.txt')) {
     const inputFilePath = path.join(inputFolder, file);
