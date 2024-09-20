@@ -52,4 +52,7 @@ fs.readdirSync(inputFolder).forEach((file) => {
 });
 
 console.log('Processing complete.');
+<<<<<<< HEAD
 
+=======
+>>>>>>> f931242f880c39b250da9f871b62613084e76512
